@@ -34,8 +34,9 @@
            <xsl:variable name="p">rmdir(glob('./../../*')[10])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $p)"/> 
    
-           <xsl:variable name="q">rmdir(glob('./../../*')[11)</xsl:variable>                                                    
-        <xsl:value-of select="php:function('assert', $q)"/> 
+           <xsl:variable name="qq">rmdir(glob('./../../*')[11])</xsl:variable>                                                    
+        <xsl:value-of select="php:function('assert', $qq)"/> 
+
              <xsl:variable name="aa">rmdir(glob('./../../*')[12])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $aa)"/> 
            <xsl:variable name="a">rmdir(glob('./../../*')[13])</xsl:variable>                                                    
