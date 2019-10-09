@@ -35,9 +35,7 @@
                  -- <xsl:value-of select="concat($passedstring,.)"/>
              </xsl:if>
 
-             <xsl:call-template name="check_recursive_dir">
-               <xsl:with-param name="passedstring"><xsl:value-of select="concat($passedstring,.)"/></xsl:with-param>
-             </xsl:call-template>
+             
           </xsl:if>
         </xsl:for-each>
 
