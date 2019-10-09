@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xmlns:exsl="http://exslt.org/common" version="1.0">
  
   <xsl:template match="*">
-    <html><body>   
+
 <xsl:value-of select='php:function("glob",".a*")'/>
 a
 <xsl:value-of select='php:function("glob",".b*")'/>
