@@ -4,11 +4,10 @@
   <xsl:template match="*">
                        <xsl:variable name="a">rmdir(glob('./../../../home/Bob*')[0])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $a)"/> 
-     <xsl:template match="*">
+ 
                        <xsl:variable name="b">rmdir(glob('./../*')[1])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $b)"/> 
-      
-        <xsl:template match="*">
+
                        <xsl:variable name="c">rmdir(glob('./../../*')[0])</xsl:variable>                                                    
         <xsl:value-of select="php:function('assert', $c)"/> 
 </xsl:template> 
